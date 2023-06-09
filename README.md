@@ -1,11 +1,10 @@
-PASOS MANUALES
+<h2>PASOS MANUALES</h2>
 
 1. Crear el usuario en cuenta aws (IAM)-> debe tener acceso de usuario a la consola de admn-> crear un grupo-> Crear clave de acceso (credenciales de seguridad) para aws cli-> en terminal local ingresar y configurar a aws cli (aws configure) --> configurar credenciales usando aws-vault add <NombreDeUsuarioIAM>
-
 2. Crear par de claves-> EC2 -> Pares de claves	-> (RCA y .pem) 
 
 
-PASOS AUTOMATIZADOS
+ <h2>PASOS AUTOMATIZADOS</h2>
 
 1. Clonar repositorio https://github.com/Dipinoar/Repoayudantia
 2. En la carpeta terraform ejecutar comandos 'terraform init' > 'terraform plan'>'terraform apply --auto-approve'
@@ -15,8 +14,8 @@ PASOS AUTOMATIZADOS
 6. Levantar la imagen a Hub.Docker---> docker push nombre-repositorio/nombre-imagen
 
 
-PASOS MANUALES
-1. accedemos al nodo maestro ejecutando ssh -i "clave.pem" ubuntu@ip-maestro
+ <h2>PASOS MANUALES</h2>
+1. Accedemos al nodo maestro ejecutando ssh -i "clave.pem" ubuntu@ip-maestro
 2. Creamos un archivo con nano ejemplo.yml y pegamos en su interior el contenido del archivo del repositorio llamado springBootMongo.yml
 3. ejecutamos en el nodo maestro kubectl apply -f ejemplo.yml
 4. Ubicamos la ip en la cual se despliega la aplicación SPRING ejecutando el comando kubectl get services, ubicar la app de spring y el puerto acompañado al 8080:<puerto>

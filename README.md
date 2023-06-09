@@ -15,13 +15,14 @@
 
 
  <h2>PASOS MANUALES</h2>
+ 
 1. Accedemos al nodo maestro ejecutando ssh -i "clave.pem" ubuntu@ip-maestro
 2. Creamos un archivo con nano ejemplo.yml y pegamos en su interior el contenido del archivo del repositorio llamado springBootMongo.yml
-3. Ejecutamos en el nodo maestro kubectl apply -f ejemplo.yml
-4. Ubicamos la ip en la cual se despliega la aplicación SPRING ejecutando el comando kubectl get services, ubicar la app de spring y el puerto acompañado al 8080:puerto
-5. Tomamos una ip pública de los workers y accedemos a ella en el navegador acompañado del puerto pesquisado. Utiliza la aplicación 
-6. Como el puerto es inalcanzable (no funciona el método post para realizar queries) desde el pod de la aplicación, debe accederse al grupo de seguridad (EC2 -> Security Groups) y permitir todo el tráfico de entrada
-7. Se vuelve a intentar el paso 5
+4. Ejecutamos en el nodo maestro kubectl apply -f ejemplo.yml
+5. Ubicamos la ip en la cual se despliega la aplicación SPRING ejecutando el comando kubectl get services, ubicar la app de spring y el puerto acompañado al 8080:puerto
+6. Tomamos una ip pública de los workers y accedemos a ella en el navegador acompañado del puerto pesquisado. Utiliza la aplicación 
+7. Como el puerto es inalcanzable (no funciona el método post para realizar queries) desde el pod de la aplicación, debe accederse al grupo de seguridad (EC2 -> Security Groups) y permitir todo el tráfico de entrada
+8. Se vuelve a intentar el paso 5
 
 
 -------------

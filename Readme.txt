@@ -1,4 +1,4 @@
-PASOS MANUALES
+<h1>PASOS MANUALES</h1>
 
 1. Crear el usuario en cuenta aws (IAM)-> debe tener acceso de usuario a la consola de admn-> crear un grupo-> Crear clave de acceso (credenciales de seguridad) para aws cli-> en terminal local ingresar y configurar a aws cli (aws configure) --> configurar credenciales usando aws-vault add <NombreDeUsuarioIAM>
 

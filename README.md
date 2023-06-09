@@ -25,8 +25,9 @@
 
 
 -------------
-¡¡Intenta realizar tantos pasos automatizados como te sea posible!!
 Destruir instancias donde se realizó Terraform init, ejecutando el comando Terraform destroy --auto-approve
+¡¡Intenta realizar tantos pasos automatizados como te sea posible!!
+
 
 
 

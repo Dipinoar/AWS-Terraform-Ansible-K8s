@@ -7,7 +7,7 @@
 
  <h2>PASOS AUTOMATIZADOS</h2>
 
-1. Clonar repositorio https://github.com/Dipinoar/Repoayudantia
+1. Clonar repositorio https://github.com/Dipinoar/AWS-Terraform-Ansible-K8s
 2. En la carpeta terraform ejecutar comandos 'terraform init' > 'terraform plan'>'terraform apply --auto-approve'
 3. Reemplazar las ips en el inventario hosts.example y cambiar la ruta del la clave pem con NombreClave.pem
 4. En la carpeta ansible ejecutar comandos 'ansible-playbook -i hosts.example kube-dependencies.yml'--> luego ejecutar 'ansible-playbook -i hosts.example master.yml' ---> por último 'ansible-playbook -i hosts.example workers.yml'

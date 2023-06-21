@@ -11,8 +11,9 @@
 2. En la carpeta terraform ejecutar comandos 'terraform init' > 'terraform plan'>'terraform apply --auto-approve'
 3. Reemplazar las ips en el inventario hosts.example y cambiar la ruta del la clave pem con NombreClave.pem
 4. En la carpeta ansible ejecutar comandos 'ansible-playbook -i hosts.example kube-dependencies.yml'--> luego ejecutar 'ansible-playbook -i hosts.example master.yml' ---> por último 'ansible-playbook -i hosts.example workers.yml'
-5. Ahora se debe construir la imagen: ejecutar docker build -t nombre-repositorio/nombre-imagen .  (incluir el punto)
-6. Levantar la imagen a Hub.Docker---> docker push nombre-repositorio/nombre-imagen
+5. En el directorio principal ejecutar 'mvn clean package' para crear target y artefacto
+6. Ahora se debe construir la imagen: ejecutar docker build -t nombre-repositorio/nombre-imagen .  (incluir el punto)
+7. Levantar la imagen a Hub.Docker---> docker push nombre-repositorio/nombre-imagen
 
 
  <h2>PASOS MANUALES</h2>

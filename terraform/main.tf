@@ -59,12 +59,12 @@ resource "aws_security_group" "devops_sg" {
     }
 
     ingress {
-        from_port   = 27017
-        to_port     = 27017
-        protocol    = "tcp"
+        from_port   = 8472
+        to_port     = 8472
+        protocol    = "udp"
         cidr_blocks = ["0.0.0.0/0"]
     }
-
+   
     egress {
         from_port   = 0
         to_port     = 0
